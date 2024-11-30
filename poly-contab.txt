@@ -1,0 +1,15 @@
+{
+	"Version": "2012-10-17",
+	"Statement": [
+		{
+			"Effect": "Allow",
+			"Action": "s3:GetObject",
+			"Resource": "arn:aws:s3:::ada-contab/*"
+		},
+		{
+			"Effect": "Allow",
+			"Action": "SNS:Publish",
+			"Resource": "arn:aws:sns:us-east-1:352245087617:s3-events-topic"
+		}
+	]
+}
